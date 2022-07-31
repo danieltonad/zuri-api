@@ -1,14 +1,14 @@
 # DEPLOY LINK
- <a href="https://zuri-api-auth.herokuapp.com/"> https://zuri-api-auth.herokuapp.com/ </a>
+ <a href="https://zuri-api-auth.herokuapp.com/api/"> https://zuri-api-auth.herokuapp.com/ </a>
 
-### Register: /user/create
+#### Register: /user/create
 
-### Login: /user/login
+#### Login: /user/login
 
-### Update: /user/update/{id}
+#### Update: /user/update/{id}
 
-### Delete: /user/delete/{id}
+#### Delete: /user/delete/{id}
 
-### Getuser: /user/{id}
+#### Getuser: /user/{id}
 
-### Getusers: /users
+#### Getusers: /users
