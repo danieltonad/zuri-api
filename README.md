@@ -1,5 +1,5 @@
 # DEPLOY LINK
- <a href="https://zuri-api-auth.herokuapp.com/api/"> https://zuri-api-auth.herokuapp.com/ </a>
+ <a href="https://zuri-api-auth.herokuapp.com/api/"> https://zuri-api-auth.herokuapp.com/api </a>
 
 #### Register: /user/create
 
