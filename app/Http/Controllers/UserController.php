@@ -48,7 +48,8 @@ class UserController extends Controller
 
         if (Auth::attempt($credentials)) {
             return response()->json([
-                "message" => "Logged In"
+                "message" => "Logged In",
+                "user" => User::where('email',$request->email)->first()
             ]);
         } else {
             return response()->json([
@@ -65,7 +66,7 @@ class UserController extends Controller
             $update = $user->update($request->all());
             return response()->json([
                 "message" => "User Datails Updated",
-                "data" => $update
+                "data" => $user
             ]);
         } else {
             return response()->json([
@@ -87,5 +88,27 @@ class UserController extends Controller
                 "message" => "Unable to deleted User"
             ]);
         }
+    }
+
+    public function getUser($id){
+        $user = User::find($id);
+        if ($user) {
+            return response()->json([
+                "message" => "User Found",
+                "data" => $user
+            ]);
+        } else {
+            return response()->json([
+                "message" => "User Not Found !"
+            ]);
+        }
+    }
+
+    public function getUsers(){
+       
+            return response()->json([
+                "message" => "All Users",
+                "data" => User::all()
+            ]);
     }
 }
